@@ -2,7 +2,7 @@ page_title: Up-Goer-Five for NCAS
 
 page_subtitle: |
   National Centre for Atmospheric Science using
-  only the thousand (“ten hundred”) most common words
+  only the thousand most common words
 
 definitions:
   - term: Weather
@@ -41,12 +41,12 @@ definitions:
     definition: >
       When the sky tries on soft silver roads to make you feel how close and far it could be to you.
 
-  - term: CMS
+  - term: NCAS Computational Modelling Services (CMS)
     variant: 1
     definition: >
       Help make computer work fast.
 
-  - term: CMS
+  - term: NCAS Computational Modelling Services (CMS)
     variant: 2
     definition: >
       Computer small world help.
@@ -116,7 +116,7 @@ definitions:
     definition: >
       It is a big computer system that we use to figure out how the air, wind, snow and storms change in the past and in the future.
 
-  - term: SCR
+  - term:  University of Reading Staff Common Room (SCR) at Park House Pub
     variant: 1
     definition: >
       It is a place where our team goes every week on day five of the week to laugh, talk, drink and have food.
@@ -153,12 +153,12 @@ definitions:
     definition: >
       A black and warm drink that makes us not fall asleep and talk together and talk together next to the machine we use to prepare it (without using the pointy cutting thing).
 
-  - term: Research Software Engineer
+  - term: Research Software Engineer (RSE)
     variant: 1
     definition: >
       Person that knows how to fix things and make things work and put and take things from clouds and is poor but happy.
 
-  - term: NCAS Tagline
+  - term: The NCAS Tagline
     variant: 1
     subtitle: Leading atmospheric science for a sustainable future
     definition: >
@@ -174,7 +174,7 @@ definitions:
     definition: >
       Big computers in your building or far away that we use to understand how the sky works.
 
-  - term: AMOF
+  - term: Atmospheric Measurement and Observation Facility (AMOF)
     variant: 1
     definition: >
       Group of people who look at the sky to see what is happening and how it happens.
