@@ -2,73 +2,228 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Workshop Definitions</title>
+<title>{{ page_title }}</title>
 
 <style>
+:root {
+    --page-bg: #f7f4ee;
+    --card-bg: #ffffff;
+    --text: #2d3748;
+    --muted: #64748b;
+
+    /* NCAS-inspired accents */
+    --accent: #186f4d;
+    --accent-light: #c1dbc9;
+    --secondary: #35548c;
+
+    --shadow: rgba(15, 23, 42, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: system-ui, sans-serif;
-    background: #f5f6f8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #eaf4ef, transparent 35%),
+        radial-gradient(circle at bottom right, #f4f0df, transparent 35%),
+        var(--page-bg);
+
+    color: var(--text);
+
     margin: 0;
-    padding: 2rem;
+    padding: 3rem;
+}
+
+
+/* Page heading */
+
+.page-header {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
+    display: inline-block;
+
+    background: var(--accent);
+    color: white;
+
+    padding: 0.8rem 2rem;
+
+    border-radius: 999px;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 30px var(--shadow);
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+.page-subtitle {
+    margin-top: 1.2rem;
+
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    color: var(--secondary);
 }
 
-/* Masonry effect */
+
+/* Masonry layout */
+
 #definitions {
-    columns: 320px;
-    column-gap: 1.5rem;
+    columns: 340px;
+    column-gap: 2rem;
+
+    max-width: 1400px;
+    margin: auto;
 }
+
+
+/* Cards */
 
 .card {
     display: inline-block;
+
     width: 100%;
-    margin: 0 0 1.5rem;
-    background: white;
-    border-radius: 12px;
-    padding: 1rem;
-    box-sizing: border-box;
+    margin: 0 0 2rem;
+
+    background: var(--card-bg);
+
+    border-radius: 18px;
+
+    padding: 1.4rem;
+
     break-inside: avoid;
+
     box-shadow:
-        0 2px 6px rgba(0,0,0,.08);
+        0 5px 20px var(--shadow);
+
+    border-top: 8px solid var(--accent);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
-.card h2 {
-    margin: 0 0 .5rem;
-    font-size: 1.1rem;
-    color: #0b5cad;
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.18);
 }
+
+
+/* Card title */
+
+.card h2 {
+    margin: 0 0 1rem;
+
+    text-align: left;
+
+    font-size: 1.4rem;
+    font-weight: 750;
+
+    color: var(--accent);
+}
+
+
+/* Definition text */
 
 .card p {
     margin: 0;
-    line-height: 1.45;
-    color: #444;
+
+    line-height: 1.6;
+
+    font-size: 1.05rem;
 }
+
+
+.card ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+
+.card li {
+    padding-left: .3rem;
+
+    margin-bottom: .9rem;
+
+    line-height: 1.55;
+}
+
+
+.card li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Images */
 
 .card-image {
     width: 100%;
-    max-height: 180px;
+
+    max-height: 220px;
+
     object-fit: cover;
-    border-radius: 12px;
+
+    border-radius: 14px;
+
+    margin-bottom: 1.2rem;
+}
+
+
+/* Small subtitle */
+
+.subtitle {
+    color: var(--secondary);
+
+    font-size: .9rem;
+
+    font-style: italic;
+
+    margin-top: -.5rem;
+
     margin-bottom: 1rem;
 }
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    #definitions {
+        columns: 1;
+    }
+
+}
 </style>
+
 </head>
 
 <body>
 
+
+<header class="page-header">
+
 <h1>{{ page_title }}</h1>
 
-<h2>{{ page_subtitle }}</h2>
+<div class="page-subtitle">
+    {{ page_subtitle }}
+</div>
+
+</header>
+
 
 <div id="definitions">
 
@@ -79,16 +234,22 @@ h2 {
 {% if card.image %}
 <img class="card-image" src="{{ card.image }}" alt="{{ card.term }}">
 {% endif %}
-  
+
+
 <h2>{{ card.term }}</h2>
 
+
 {% if card.subtitle %}
-<div class="subtitle">{{ card.subtitle }}</div>
+<div class="subtitle">
+    {{ card.subtitle }}
+</div>
 {% endif %}
+
 
 {% if card.definitions|length == 1 %}
 
 <p>{{ card.definitions[0] }}</p>
+
 
 {% else %}
 
@@ -104,12 +265,13 @@ h2 {
 
 {% endif %}
 
+
 </div>
 
 {% endfor %}
 
 </div>
 
+
 </body>
 </html>
-

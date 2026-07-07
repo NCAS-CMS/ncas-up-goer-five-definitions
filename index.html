@@ -2,75 +2,230 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Workshop Definitions</title>
+<title>Up-Goer-Five for NCAS</title>
 
 <style>
+:root {
+    --page-bg: #f7f4ee;
+    --card-bg: #ffffff;
+    --text: #2d3748;
+    --muted: #64748b;
+
+    /* NCAS-inspired accents */
+    --accent: #186f4d;
+    --accent-light: #c1dbc9;
+    --secondary: #35548c;
+
+    --shadow: rgba(15, 23, 42, 0.12);
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
-    font-family: system-ui, sans-serif;
-    background: #f5f6f8;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    background:
+        radial-gradient(circle at top left, #eaf4ef, transparent 35%),
+        radial-gradient(circle at bottom right, #f4f0df, transparent 35%),
+        var(--page-bg);
+
+    color: var(--text);
+
     margin: 0;
-    padding: 2rem;
+    padding: 3rem;
+}
+
+
+/* Page heading */
+
+.page-header {
+    max-width: 900px;
+    margin: 0 auto 3rem;
+    text-align: center;
 }
 
 h1 {
-    text-align: center;
-    margin-bottom: 2rem;
-    color: #333;
+    display: inline-block;
+
+    background: var(--accent);
+    color: white;
+
+    padding: 0.8rem 2rem;
+
+    border-radius: 999px;
+
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    font-weight: 800;
+
+    box-shadow:
+        0 8px 30px var(--shadow);
 }
 
-h2 {
-    text-align: center;
-    margin-bottom: 2rem;
+.page-subtitle {
+    margin-top: 1.2rem;
+
+    font-size: 1.2rem;
+    line-height: 1.5;
+
+    color: var(--secondary);
 }
 
-/* Masonry effect */
+
+/* Masonry layout */
+
 #definitions {
-    columns: 320px;
-    column-gap: 1.5rem;
+    columns: 340px;
+    column-gap: 2rem;
+
+    max-width: 1400px;
+    margin: auto;
 }
+
+
+/* Cards */
 
 .card {
     display: inline-block;
+
     width: 100%;
-    margin: 0 0 1.5rem;
-    background: white;
-    border-radius: 12px;
-    padding: 1rem;
-    box-sizing: border-box;
+    margin: 0 0 2rem;
+
+    background: var(--card-bg);
+
+    border-radius: 18px;
+
+    padding: 1.4rem;
+
     break-inside: avoid;
+
     box-shadow:
-        0 2px 6px rgba(0,0,0,.08);
+        0 5px 20px var(--shadow);
+
+    border-top: 8px solid var(--accent);
+
+    transition:
+        transform .2s ease,
+        box-shadow .2s ease;
 }
 
-.card h2 {
-    margin: 0 0 .5rem;
-    font-size: 1.1rem;
-    color: #0b5cad;
+
+.card:hover {
+    transform: translateY(-5px);
+
+    box-shadow:
+        0 12px 30px rgba(15,23,42,.18);
 }
+
+
+/* Card title */
+
+.card h2 {
+    margin: 0 0 1rem;
+
+    text-align: left;
+
+    font-size: 1.4rem;
+    font-weight: 750;
+
+    color: var(--accent);
+}
+
+
+/* Definition text */
 
 .card p {
     margin: 0;
-    line-height: 1.45;
-    color: #444;
+
+    line-height: 1.6;
+
+    font-size: 1.05rem;
 }
+
+
+.card ol {
+    margin: 0;
+    padding-left: 1.5rem;
+}
+
+
+.card li {
+    padding-left: .3rem;
+
+    margin-bottom: .9rem;
+
+    line-height: 1.55;
+}
+
+
+.card li:last-child {
+    margin-bottom: 0;
+}
+
+
+/* Images */
 
 .card-image {
     width: 100%;
-    max-height: 180px;
+
+    max-height: 220px;
+
     object-fit: cover;
-    border-radius: 12px;
+
+    border-radius: 14px;
+
+    margin-bottom: 1.2rem;
+}
+
+
+/* Small subtitle */
+
+.subtitle {
+    color: var(--secondary);
+
+    font-size: .9rem;
+
+    font-style: italic;
+
+    margin-top: -.5rem;
+
     margin-bottom: 1rem;
 }
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+    body {
+        padding: 1rem;
+    }
+
+    #definitions {
+        columns: 1;
+    }
+
+}
 </style>
+
 </head>
 
 <body>
 
+
+<header class="page-header">
+
 <h1>Up-Goer-Five for NCAS</h1>
 
-<h2>National Centre for Atmospheric Science using
+<div class="page-subtitle">
+    National Centre for Atmospheric Science using
 only the thousand (“ten hundred”) most common words
-</h2>
+
+</div>
+
+</header>
+
 
 <div id="definitions">
 
@@ -79,8 +234,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>AMOF</h2>
+
+
 
 
 
@@ -91,6 +249,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -98,8 +258,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Air pollution</h2>
+
+
 
 
 
@@ -110,6 +273,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -117,8 +282,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Automation</h2>
+
+
 
 
 
@@ -129,6 +297,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -136,8 +306,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>CMS</h2>
+
+
 
 
 
@@ -161,6 +334,7 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
 </div>
 
 
@@ -170,8 +344,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/cake.jpg" alt="Cake Club">
 
-  
+
+
 <h2>Cake Club</h2>
+
+
 
 
 
@@ -182,6 +359,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -189,8 +368,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Climate</h2>
+
+
 
 
 
@@ -201,6 +383,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -208,8 +392,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Climate Simulation</h2>
+
+
 
 
 
@@ -217,6 +404,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>Finding a way to talk about how different parts of the world work using a computer's brain.
 </p>
+
+
 
 
 
@@ -229,8 +418,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/cloud.jpg" alt="Cloud">
 
-  
+
+
 <h2>Cloud</h2>
+
+
 
 
 
@@ -254,6 +446,7 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
 </div>
 
 
@@ -261,8 +454,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Cloudy</h2>
+
+
 
 
 
@@ -270,6 +466,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>When the sky tries on soft silver roads to make you feel how close and far it could be to you.
 </p>
+
+
 
 
 
@@ -282,8 +480,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/coffee.jpg" alt="Coffee">
 
-  
+
+
 <h2>Coffee</h2>
+
+
 
 
 
@@ -291,6 +492,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>A black and warm drink that makes us not fall asleep and talk together and talk together next to the machine we use to prepare it (without using the pointy cutting thing).
 </p>
+
+
 
 
 
@@ -303,8 +506,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/data.jpg" alt="Data">
 
-  
+
+
 <h2>Data</h2>
+
+
 
 
 
@@ -315,6 +521,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -322,8 +530,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Dispersion</h2>
+
+
 
 
 
@@ -331,6 +542,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>Bad air moving and seeing where it goes and how it spreads out.
 </p>
+
+
 
 
 
@@ -343,8 +556,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/sustainability.jpg" alt="Environmental Sustainability">
 
-  
+
+
 <h2>Environmental Sustainability</h2>
+
+
 
 
 
@@ -355,6 +571,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -362,8 +580,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>High Performance Computing (HPC)</h2>
+
+
 
 
 
@@ -371,6 +592,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>Big computers in your building or far away that we use to understand how the sky works.
 </p>
+
+
 
 
 
@@ -383,8 +606,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/jasmin.jpg" alt="JASMIN">
 
-  
+
+
 <h2>JASMIN</h2>
+
+
 
 
 
@@ -395,6 +621,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -402,8 +630,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Modelling</h2>
+
+
 
 
 
@@ -414,6 +645,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -421,8 +654,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Monsoon</h2>
+
+
 
 
 
@@ -433,6 +669,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -440,8 +678,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>NCAS</h2>
+
+
 
 
 
@@ -465,6 +706,7 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
 </div>
 
 
@@ -472,17 +714,24 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>NCAS Tagline</h2>
 
 
-<div class="subtitle">Leading atmospheric science for a sustainable future</div>
+
+<div class="subtitle">
+    Leading atmospheric science for a sustainable future
+</div>
+
 
 
 
 
 <p>Allowing, helping and leading the discovering of facts about the parts of the air now and for the many years to come to guard people and living parts of the earth.
 </p>
+
+
 
 
 
@@ -495,8 +744,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/observation.jpg" alt="Observation">
 
-  
+
+
 <h2>Observation</h2>
+
+
 
 
 
@@ -507,6 +759,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -514,8 +768,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Ocean</h2>
+
+
 
 
 
@@ -526,6 +783,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -533,8 +792,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Research Scientist</h2>
+
+
 
 
 
@@ -545,6 +807,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -552,8 +816,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Research Software Engineer</h2>
+
+
 
 
 
@@ -564,6 +831,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -571,8 +840,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>SCR</h2>
+
+
 
 
 
@@ -583,6 +855,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -590,8 +864,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Slack</h2>
+
+
 
 
 
@@ -602,6 +879,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -609,8 +888,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Supervising</h2>
+
+
 
 
 
@@ -618,6 +900,8 @@ only the thousand (“ten hundred”) most common words
 
 <p>Telling other people at work what to do. Help people with their questions.
 </p>
+
+
 
 
 
@@ -630,8 +914,11 @@ only the thousand (“ten hundred”) most common words
 
 <img class="card-image" src="images/drone.jpg" alt="Uncrewed Aerial System (UAS)">
 
-  
+
+
 <h2>Uncrewed Aerial System (UAS)</h2>
+
+
 
 
 
@@ -642,6 +929,8 @@ only the thousand (“ten hundred”) most common words
 
 
 
+
+
 </div>
 
 
@@ -649,8 +938,11 @@ only the thousand (“ten hundred”) most common words
 <div class="card">
 
 
-  
+
+
 <h2>Weather</h2>
+
+
 
 
 
@@ -684,11 +976,13 @@ only the thousand (“ten hundred”) most common words
 
 
 
-</div>
-
-
 
 </div>
+
+
+
+</div>
+
 
 </body>
 </html>
