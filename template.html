@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Workshop Definitions</title>
+
+<style>
+body {
+    font-family: system-ui, sans-serif;
+    background: #f5f6f8;
+    margin: 0;
+    padding: 2rem;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #333;
+}
+
+/* Masonry effect */
+#definitions {
+    columns: 320px;
+    column-gap: 1.5rem;
+}
+
+.card {
+    display: inline-block;
+    width: 100%;
+    margin: 0 0 1.5rem;
+    background: white;
+    border-radius: 12px;
+    padding: 1rem;
+    box-sizing: border-box;
+    break-inside: avoid;
+    box-shadow:
+        0 2px 6px rgba(0,0,0,.08);
+}
+
+.card h2 {
+    margin: 0 0 .5rem;
+    font-size: 1.1rem;
+    color: #0b5cad;
+}
+
+.card p {
+    margin: 0;
+    line-height: 1.45;
+    color: #444;
+}
+</style>
+</head>
+
+<body>
+
+<h1>{{ title }}</h1>
+
+<div id="definitions">
+
+{% for card in cards %}
+
+<div class="card">
+
+<h2>{{ card.term }}</h2>
+
+{% if card.subtitle %}
+<div class="subtitle">{{ card.subtitle }}</div>
+{% endif %}
+
+{% if card.definitions|length == 1 %}
+
+<p>{{ card.definitions[0] }}</p>
+
+{% else %}
+
+<ol>
+
+{% for definition in card.definitions %}
+
+<li>{{ definition }}</li>
+
+{% endfor %}
+
+</ol>
+
+{% endif %}
+
+</div>
+
+{% endfor %}
+
+</div>
+
+</body>
+</html>
+

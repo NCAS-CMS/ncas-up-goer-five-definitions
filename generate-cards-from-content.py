@@ -1,5 +1,5 @@
 """
-Generate output.html from injecting definitions.yaml content into input.html.
+Generate index.html from injecting definitions.yaml content into input.html.
 
 Uses Jinaj2 for injection. Requires pyyaml.
 """
@@ -30,9 +30,9 @@ for term, defs in groups.items():
 cards.sort(key=lambda c: c["term"])
 
 env = Environment(loader=FileSystemLoader("."))
-template = env.get_template("index.html")
+template = env.get_template("template.html")
 html = template.render(title=data["title"], cards=cards)
 
-Path("output.html").write_text(html)
+Path("index.html").write_text(html)
 
-print("Generated output.html")
+print("Generated index.html")
