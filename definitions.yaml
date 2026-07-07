@@ -27,6 +27,7 @@ definitions:
 
   - term: Cloud
     variant: 1
+    image: images/cloud.jpg
     definition: >
       Big and white soft thing in the sky.
 
@@ -82,11 +83,13 @@ definitions:
 
   - term: Uncrewed Aerial System (UAS)
     variant: 1
+    image: images/drone.jpg
     definition: >
       Small flying box that looks at things in the sky.
 
   - term: Environmental Sustainability
     variant: 1
+    image: images/sustainability.jpg
     definition: >
       Stop making the world change in a bad way. Use less power. Use less water. Think about how you use things and use things more than once. Make things in a clean way and use them carefully. Throw away less.
 
@@ -97,6 +100,7 @@ definitions:
 
   - term: Data
     variant: 1
+    image: images/data.jpg
     definition: >
       Large information set.
 
@@ -105,7 +109,7 @@ definitions:
     definition: >
       Getting information from looking.
 
-  - term: Jasmin
+  - term: JASMIN
     variant: 1
     definition: >
       It is a big computer system that we use to figure out how the air, wind, snow and storms change in the past and in the future.
@@ -137,11 +141,13 @@ definitions:
 
   - term: Cake Club
     variant: 1
+    image: images/cake.jpg
     definition: >
       A group of people who work together and enjoy bringing sweet things together in one place, warm them to create something very good to eat and share them.
 
   - term: Coffee
     variant: 1
+    image: images/coffee.jpg
     definition: >
       A black and warm drink that makes us not fall asleep and talk together and talk together next to the machine we use to prepare it (without using the pointy cutting thing).
 

@@ -23,6 +23,7 @@ for term, defs in groups.items():
         {
             "term": term,
             "subtitle": defs[0].get("subtitle"),
+            "image": defs[0].get("image"),
             "definitions": [d["definition"] for d in defs],
         }
     )

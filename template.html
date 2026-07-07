@@ -53,6 +53,14 @@ h2 {
     line-height: 1.45;
     color: #444;
 }
+
+.card-image {
+    width: 100%;
+    max-height: 180px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+}
 </style>
 </head>
 
@@ -68,6 +76,10 @@ h2 {
 
 <div class="card">
 
+{% if card.image %}
+<img class="card-image" src="{{ card.image }}" alt="{{ card.term }}">
+{% endif %}
+  
 <h2>{{ card.term }}</h2>
 
 {% if card.subtitle %}
