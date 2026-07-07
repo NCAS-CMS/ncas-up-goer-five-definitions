@@ -106,11 +106,13 @@ definitions:
 
   - term: Observation
     variant: 1
+    image: images/observation.jpg
     definition: >
       Getting information from looking.
 
   - term: JASMIN
     variant: 1
+    image: images/jasmin.jpg
     definition: >
       It is a big computer system that we use to figure out how the air, wind, snow and storms change in the past and in the future.
 
