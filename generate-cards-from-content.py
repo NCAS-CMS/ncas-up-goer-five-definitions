@@ -1,0 +1,38 @@
+"""
+Generate output.html from injecting definitions.yaml content into input.html.
+
+Uses Jinaj2 for injection. Requires pyyaml.
+"""
+
+from pathlib import Path
+from collections import defaultdict
+
+import yaml
+from jinja2 import Environment, FileSystemLoader
+
+data = yaml.safe_load(Path("definitions.yaml").read_text())
+groups = defaultdict(list)
+
+for item in data["definitions"]:
+    groups[item["term"]].append(item)
+
+cards = []
+
+for term, defs in groups.items():
+    cards.append(
+        {
+            "term": term,
+            "subtitle": defs[0].get("subtitle"),
+            "definitions": [d["definition"] for d in defs],
+        }
+    )
+
+cards.sort(key=lambda c: c["term"])
+
+env = Environment(loader=FileSystemLoader("."))
+template = env.get_template("index.html")
+html = template.render(title=data["title"], cards=cards)
+
+Path("output.html").write_text(html)
+
+print("Generated output.html")
