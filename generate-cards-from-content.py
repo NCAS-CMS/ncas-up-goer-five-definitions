@@ -31,7 +31,11 @@ cards.sort(key=lambda c: c["term"])
 
 env = Environment(loader=FileSystemLoader("."))
 template = env.get_template("template.html")
-html = template.render(title=data["title"], cards=cards)
+html = template.render(
+    page_title=data["page_title"],
+    page_subtitle=data["page_subtitle"],
+    cards=cards
+)
 
 Path("index.html").write_text(html)
 
