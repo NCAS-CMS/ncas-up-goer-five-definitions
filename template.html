@@ -133,6 +133,36 @@ h1 {
 }
 
 
+/* Links */
+
+.page-links {
+    margin-top: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.page-links a {
+    display: inline-block;
+
+    margin: .3rem .5rem .3rem 0;
+
+    padding: .4rem .8rem;
+
+    border-radius: 999px;
+
+    background: #186f4d;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-size: .9rem;
+}
+
+
+.page-links a:hover {
+    background: #35548c;
+}
+
 /* Definition text */
 
 .card p {
@@ -224,6 +254,19 @@ h1 {
 
 </header>
 
+<div class="page-summary">
+    <p>{{ page_summary }}</p>
+
+    <div class="page-links">
+
+    {% for link in page_links %}
+        <a href="{{ link.url }}" target="_blank">
+            {{ link.text }}
+        </a>
+    {% endfor %}
+
+    </div>
+</div>
 
 <div id="definitions">
 

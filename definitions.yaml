@@ -1,8 +1,33 @@
-page_title: Up-Goer-Five for NCAS
+page_title: Up-Goer Five for NCAS
 
 page_subtitle: |
   National Centre for Atmospheric Science using
   only the thousand most common words
+
+page_summary: |
+  The world of NCAS explained under the Up-Goer Five Challenge:
+  using only the thousand most common words. Inspired by the original Up-Goer
+  Five idea, a session at NCAS Staff Meeting 2026 explored how we describe
+  our work, science, and shared purpose using simple language. The cards
+  here collect definitions for words and phrases relating to NCAS decided
+  by members of NCAS in the session. In some case there are multiple
+  definitions, reflecting the many ways we can explain the same concept.
+
+  For more information and context, see the resources linked in the
+  buttons below.
+
+page_links:
+  - text: Session slides
+    url: https://github.com/sadielbartholomew/sadielbartholomew/blob/master/talks-and-workshops/up_goer_five_ncas_staff_meeting_26.pdf
+
+  - text: Session handout
+    url: https://github.com/sadielbartholomew/sadielbartholomew/blob/master/talks-and-workshops/up_goer_five_ncas_staff_meeting_26_handout.pdf
+
+  - text: Original Up-Goer Five Comic Item
+    url: https://xkcd.com/1133/
+
+  - text: Up-Goer Five text editor by XKCD
+    url: https://www.xkcd.com/simplewriter/
 
 definitions:
   - term: Weather
