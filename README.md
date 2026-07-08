@@ -2,15 +2,15 @@
 
 ## National Centre for Atmospheric Science using only the thousand most common words
 
-**View the webpage of definitions at: https://ncas-cms.github.io/ncas-up-goer-five-definitions/**. **New definitions (or edits to existing ones) welcome from members of NCAS** and will be includded in the page above - see the final section below to learn how to contribute!
+**View the webpage of definitions at: https://ncas-cms.github.io/ncas-up-goer-five-definitions/**. **New definitions (or edits to existing ones) welcome from members of NCAS** and will be included in the page above - see the final section below to learn how to contribute!
 
 ## What is this?
 
-This repository was set up to gather defintions formed in the Up-Goer Five Challenge (describing concepts using only the thousand most common words in English) applied to the world of National Centre for Atmospheric Science (NCAS).
+This repository was set up to gather definitions formed in the Up-Goer Five Challenge (describing concepts using only the thousand most common words in English) applied to the world of National Centre for Atmospheric Science (NCAS).
 
 The collection of definitions was initiated from a session at the NCAS Staff Meeting 2026 where attendees explored how we describe our work, science, and shared purpose using simple language.
 
-The cards on the webpage (see link above) showcase the definitions for words and phrases relating to NCAS decided by members of NCAS in the session and beyond. In some case there are multiple definitions, reflecting the many ways we can explain the same concept.
+The cards on the webpage (see link above) showcase the definitions for words and phrases relating to NCAS decided by members of NCAS in the session and beyond. In some cases there are multiple definitions, reflecting the many ways we can explain the same concept.
 
 For more information and context, see the links in the section below.
 
@@ -25,7 +25,7 @@ Relevant links (also linked in the buttons on the webpage):
 
 ## Can I contribute?
 
-Yes please! If you are a member of affiliate of NCAS and wish to contibute new definitions or to suggest edits to existing ones, please consult the [contributing guide here](.github/CONTRIBUTING.md). But in short, you can either make one or more suggestions via:
+Yes please! If you are a member or affiliate of NCAS and wish to contribute new definitions or to suggest edits to existing ones, please consult the [contributing guide here](.github/CONTRIBUTING.md). But in short, you can either make one or more suggestions via:
 
 * opening an Issue on [the Issue Tracker here](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/issues);
 * opening a [Pull Request here](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/pulls) to add definition(s) directly to the [definitions YAML file](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/blob/main/definitions.yaml) (a moderator will then review these and if accepted, re-generate the HTML file so they display on the built site and merge the PR);
