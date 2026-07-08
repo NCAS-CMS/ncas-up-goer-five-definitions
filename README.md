@@ -29,10 +29,10 @@ Relevant links (also linked in the buttons on the webpage):
 
 ## Can I contribute?
 
-Yes please! If you are a member of affiliate of NCAS and wish to contibute new definitions, please consult the contributing guide here. But in short, you can either make one or more suggestions via:
+Yes please! If you are a member of affiliate of NCAS and wish to contibute new definitions, please consult the [contributing guide here](.github/CONTRIBUTING.md). But in short, you can either make one or more suggestions via:
 
 * opening an Issue on [the Issue Tracker here](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/issues);
-* opening a [Pull Request](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/pulls) to add definition(s) directly to the YAML file (a moderator will then re-generate the HTML file so they display on the built site);
+* opening a [Pull Request here](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/pulls) to add definition(s) directly to the YAML file (a moderator will then re-generate the HTML file so they display on the built site);
 * emailing Sadie on <sadie.bartholomew@ncas.ac.uk> (please use the email title 'Up Goer Five Definition Suggestions').
 
 *********
