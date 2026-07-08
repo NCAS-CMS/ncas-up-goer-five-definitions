@@ -20,7 +20,7 @@ For more information and context, see the links in the section below.
 
 ### Relevant links
 
-Further relevant links (also linked in the buttons on the webpage):
+Relevant links (also linked in the buttons on the webpage):
 
 * Session slides: https://github.com/sadielbartholomew/sadielbartholomew/blob/master/talks-and-workshops/up_goer_five_ncas_staff_meeting_26.pdf
 * Session handout: https://github.com/sadielbartholomew/sadielbartholomew/blob/master/talks-and-workshops/up_goer_five_ncas_staff_meeting_26_handout.pdf
@@ -31,8 +31,8 @@ Further relevant links (also linked in the buttons on the webpage):
 
 Yes please! If you are a member of affiliate of NCAS and wish to contibute new definitions, please consult the contributing guide here. But in short, you can either make one or more suggestions via:
 
-* opening an Issue on the Issue Tracker;
-* opening a PR to add definition(s) directly to the YAML file (a moderator will then re-generate the HTML file so they display on the built site);
+* opening an Issue on [the Issue Tracker here](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/issues);
+* opening a [Pull Request](https://github.com/NCAS-CMS/ncas-up-goer-five-definitions/pulls) to add definition(s) directly to the YAML file (a moderator will then re-generate the HTML file so they display on the built site);
 * emailing Sadie on <sadie.bartholomew@ncas.ac.uk> (please use the email title 'Up Goer Five Definition Suggestions').
 
 *********
