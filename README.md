@@ -2,11 +2,7 @@
 
 ## National Centre for Atmospheric Science using only the thousand most common words
 
-**View the webpage of definitions at: https://ncas-cms.github.io/ncas-up-goer-five-definitions/**
-
-**New definitions (or edits to existing ones) welcome from members of NCAS** and will be includded in the page above - see the final section below to learn how to contribute!
-
-*********
+**View the webpage of definitions at: https://ncas-cms.github.io/ncas-up-goer-five-definitions/**. **New definitions (or edits to existing ones) welcome from members of NCAS** and will be includded in the page above - see the final section below to learn how to contribute!
 
 ## What is this?
 
