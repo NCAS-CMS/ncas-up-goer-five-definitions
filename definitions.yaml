@@ -30,6 +30,9 @@ page_links:
   - text: Up-Goer Five text editor by XKCD
     url: https://www.xkcd.com/simplewriter/
 
+  - text: Contribute new definitions!
+    url: TODO
+
 definitions:
   - term: Weather
     variant: 1
